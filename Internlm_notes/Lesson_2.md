@@ -2,7 +2,11 @@
 
 ## 环境准备
 
-打开jupyterlab的终端，克隆已有环境，自定义环境命名
+打开jupyterlab的terminal
+
+![Alt text](images/1.png)
+
+克隆已有环境，自定义环境命名,执行如下代码
 ```
 cd /root
 conda create --name internlm_antonia --clone /root/share/install_conda_env_internlm_base.sh internlm-demo
@@ -106,6 +110,8 @@ cd /root/code/InternLM
 streamlit run web_demo.py --server.address 127.0.0.1 --server.port 6006
 ```
 网页版对话，生成的故事创作结果如下：
+
+![Alt text](images/2-demo-chat.png)
 
 ## Lagent 智能体 Demo 实现
 
@@ -353,3 +359,8 @@ if __name__ == '__main__':
 streamlit run /root/code/lagent/examples/react_web_demo.py --server.address 127.0.0.1 --server.port 6006
 ```
 在 `Web` 页面选择 `InternLM` 模型，等待模型加载完毕后，输入自定义提出的数学问题，结果如下：
+
+![Alt text](images/3-demo-lagent-1.png)
+![Alt text](images/4-demo-lagent-2.png)
+
+
